@@ -1,4 +1,4 @@
-"use strict";
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -20,7 +20,7 @@ var LoopComponent_1 = require("./LoopComponent");
 var PadsComponent = /** @class */ (function (_super) {
     __extends(PadsComponent, _super);
     function PadsComponent() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+        var _this = (_super !== null && _super.apply(this, arguments)) || this;
         _this.music = [
             "120_future_funk_beats_25", "SilentStar_120_Em_OrganSynth", "PAS3GROOVE1.03B", "MazePolitics_120_Perc",
             "GrooveB_120bpm_Tanggu", "FUD_120_StompySlosh", "electric guitar coutry slide 120bpm - B", "Bass Warwick heavy funk groove on E 120 BPM",
