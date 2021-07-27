@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
 }
 
 .App-link {
@@ -36,3 +36,305 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    background-color: black;
+    align-items: center;
+}
+.content {
+    max-width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+}
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #f3a0a0;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.pads {
+    margin: 0 auto;
+    padding: 0;
+    background-color: Transparent;
+    border: none;
+    color: #4d4351;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    display: table;
+}
+
+
+.pad {
+    overflow: auto;
+    width: 80px;
+    height: 8px;
+    padding: 40px 5px;
+    position: center;
+    box-shadow: 0 2px 6px 1px #929396;
+    display: table-cell;
+    border-radius: 0 0 5px 5px;
+ 
+}
+
+    .pad:nth-child(1) {
+        background-color: yellow;
+        box-shadow: 0 0 60px 10px #fff, 
+        0 0 70px 20px #f7f3ad, 
+        0 0 80px 30px #fbad14; 
+    }
+    .pad:nth-child(2) {
+        background-color: hotpink;
+        box-shadow: 0 0 60px 10px #fff,
+        0 0 70px 20px #f438a1,
+        0 0 80px 30px #f8badd;
+    }
+    .pad:nth-child(3) {
+        background-color: greenyellow;
+        box-shadow: 0 0 60px 10px #fff,
+        0 0 70px 20px #d7f4bc,
+        0 0 80px 30px #0ff;
+    }
+    .pad:nth-child(4) {
+        background-color: mediumturquoise;
+        box-shadow: 0 0 60px 10px #fff, 
+        0 0 70px 20px #f0f, 
+        0 0 80px 30px #0ff; 
+    }
+    .pad:nth-child(5) {
+        background-color: orangered;
+        box-shadow: 0 0 60px 10px #fff, 0 0 70px 20px #f7a486, 0 0 80px 30px #e14207;
+    }
+    .pad:nth-child(6) {
+        background-color: mediumpurple;
+        box-shadow: 0 0 60px 10px #fff, 0 0 70px 20px #d6c4fc, 0 0 80px 30px #8f6ed4;
+    }
+    .pad:nth-child(7) {
+        background-color: lightsalmon;
+        box-shadow: 0 0 60px 10px #fff, 0 0 70px 20px #f0c0ac, 0 0 80px 30px #f0632b;
+    }
+    .pad:nth-child(8) {
+        background-color: azure;
+        box-shadow: 0 0 60px 10px #fff, 0 0 70px 20px #e1e3eb, 0 0 80px 30px #98a4cf;
+    }
+    .pad:nth-child(9) {
+        background-color: springgreen;
+        box-shadow: 0 0 60px 10px #fff, 0 0 70px 20px #cbf8e2, 0 0 80px 30px #27e184;
+    }
+
+    .pad:hover {
+        box-shadow: 0 2px 6px 1px #9c3c3c;
+    }
+
+
+
+
+.machine {
+    margin: 0 auto;
+    color: white;
+    border-radius: 50%;
+}
+
+    .machine:hover {
+        transform: rotate(180deg);
+    }
+
+h1 {
+    margin: 0 auto;
+    font-size: 100px;
+}
+
+
+.record {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.notRec {
+    width: 35px;
+    height: 35px;
+    font-size: 0;
+    background-color: red;
+    border: 0;
+    margin: 18px;
+    outline: none;
+    background-color: white;
+}
+
+    .notRec:hover {
+        box-shadow: 0 2px 6px 1px #f2cece;
+    }
+
+.Rec {
+    width: 35px;
+    height: 35px;
+    font-size: 0;
+    background-color: red;
+    border: 0;
+    margin: 18px;
+    outline: none;
+    border-radius: 35px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+    .Rec:hover {
+        box-shadow: 0 3px 8px 1px #f2cece;
+    }
+
+.RecOn {
+    width: 35px;
+    height: 35px;
+    font-size: 0;
+    background-color: red;
+    border: 0;
+    margin: 18px;
+    outline: none;
+    animation-name: pulse;
+    border-radius: 35px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+    }
+
+    65% {
+        box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+    }
+
+    90% {
+        box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+    }
+}
+.playPause{
+    margin: 0 auto;
+}
+.play {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    border-color: transparent transparent transparent white;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+}
+.control {
+    background-color: black;
+    color:white;
+}
+
+.pause {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    border-color: transparent transparent transparent white;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+}
+
+.recordingOptions {
+    height: 45px;
+    float: left;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    font-size: large;
+    font-family: 'Tahoma';
+    background-color:black;
+    color:white;
+}
+
+    .recordingOptions:hover {
+        background-color: #f3a0a0;
+        color: white;
+    }
+
+.dismiss {
+    height: 45px;
+    float: left;
+    background-color: black;
+    color: white;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: large;
+    font-family: 'Tahoma';
+}
+
+    .dismiss:hover {
+        background-color: #f3a0a0;
+        color: white;
+    }
+
+
+
