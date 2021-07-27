@@ -44,7 +44,7 @@ body {
 .content {
     max-width: 50%;
     margin: auto;
-    padding: 10px;
+    padding: 10%;
     background-color: black;
 }
 
@@ -118,7 +118,7 @@ border-radius: 34px;
     cursor: pointer;
     font-weight: 500;
     font-size: 12px;
-    display: table;
+    display: flex;
 }
 
 
@@ -129,7 +129,7 @@ border-radius: 34px;
     padding: 40px 5px;
     position: center;
     box-shadow: 0 2px 6px 1px #929396;
-    display: table-cell;
+    display: flex;
     border-radius: 0 0 5px 5px;
  
 }
@@ -190,6 +190,7 @@ border-radius: 34px;
     margin: 0 auto;
     color: white;
     border-radius: 50%;
+    display:flex;
 }
 
     .machine:hover {
