@@ -9,6 +9,7 @@ var __extends = (this && this.__extends) || (function () {
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
+        // eslint-disable-next-line
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
@@ -87,7 +88,7 @@ var PadsComponent = /** @class */ (function (_super) {
         return (React.createElement("div", { className: "control" },
             React.createElement("div", null,
                 React.createElement(react_media_recorder_1.ReactMediaRecorder, { audio: true, render: function (_a) {
-                        var status = _a.status, startRecording = _a.startRecording, stopRecording = _a.stopRecording, mediaBlobUrl = _a.mediaBlobUrl;
+                        var status = _a.status, startRecording = _a.startRecording, stopRecording = _a.stopRecording;
                         return (React.createElement("div", { className: "record" },
                             React.createElement("p", null, status.toString() === "Recording" ? status : null),
                             _this.state.recOn ? React.createElement("button", { className: "RecOn" }) :
